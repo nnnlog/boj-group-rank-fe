@@ -34,22 +34,22 @@
         <md-list>
           <md-list-item>
             <md-icon>home</md-icon>
-            <span class="md-list-item-text"@click="$router.push({name: 'Home'}).finally(() => {});">홈</span>
+            <span style="cursor: pointer;" class="md-list-item-text" @click="$router.push({name: 'Home'}).finally(() => {});">홈</span>
           </md-list-item>
 
           <md-list-item>
             <md-icon>people_alt</md-icon>
-            <span class="md-list-item-text" @click="$router.push({name: 'Home'}).finally(() => {});">랭킹</span>
+            <span style="cursor: pointer;" class="md-list-item-text" @click="$router.push({name: 'Rank'}).finally(() => {});">랭킹</span>
           </md-list-item>
 
           <md-list-item>
             <md-icon>chat</md-icon>
-            <span class="md-list-item-text" @click="open('https://open.kakao.com/o/gPS4w1xc', $event);">채팅방</span>
+            <span style="cursor: pointer;" class="md-list-item-text" @click="open('https://open.kakao.com/o/gPS4w1xc', $event);">채팅방</span>
           </md-list-item>
 
           <md-list-item>
             <md-icon>north_east</md-icon>
-            <span class="md-list-item-text" @click="open('https://www.acmicpc.net/group/9190', $event);">백준 그룹</span>
+            <span style="cursor: pointer;" class="md-list-item-text" @click="open('https://www.acmicpc.net/group/9190', $event);">백준 그룹</span>
           </md-list-item>
         </md-list>
       </md-app-drawer>
