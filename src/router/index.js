@@ -6,6 +6,7 @@ import 'vue-material/dist/theme/default.css';
 
 import Home from '../views/Home.vue';
 import Rank from '../views/Rank.vue';
+import NotFound from '../views/NotFound.vue';
 
 Vue.use(VueRouter);
 Vue.use(VueMaterial);
@@ -20,6 +21,11 @@ const routes = [
 		path: '/rank/',
 		name: 'Rank',
 		component: Rank
+	},
+	{
+		path: '/*',
+		name: 'NotFound',
+		component: NotFound
 	},
 ];
 

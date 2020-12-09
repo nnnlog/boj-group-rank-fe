@@ -55,7 +55,7 @@
       </md-app-drawer>
 
       <md-app-content>
-        <router-view></router-view>
+        <router-view v-if="$store.getters.members.length > 0"></router-view>
       </md-app-content>
     </md-app>
   </md-content>
@@ -73,6 +73,9 @@ export default {
       window.open(url, '_blank');
       $event.preventDefault();
     }
+  },
+  created() {
+    this.$store.dispatch('syncMembers');
   }
 }
 </script>
